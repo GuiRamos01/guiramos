@@ -1,0 +1,171 @@
+@import url('https://rsms.me/inter/inter.css')
+
+*
+    font-family: 'Inter', sans-serif
+    font-feature-settings: 'liga' 1, 'calt' 1
+
+h1, h2, h3, p
+    margin: 0
+    margin-bottom: 2px
+
+a
+    text-decoration: none
+    color: inherit
+    width: max-content
+
+button
+    outline: none
+
+h1
+    font-size: 28px
+    cursor: default
+    margin-bottom: 8px
+
+    @media (max-width: 600px)
+        font-size: 25px
+
+h2
+    cursor: default
+
+p
+    color: #575656
+    font-weight: 600
+    cursor: default
+
+    @media (max-width: 600px)
+        font-size: 16px
+
+#Main
+    margin-bottom: 70px
+
+.Section
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 100vh
+    box-shadow: 2px 3px 11px 0px rgba(0, 0, 0, 0.212)
+
+    .header
+        padding: 10px
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .weight-400
+        font-weight: 400
+
+    .buttons
+        padding: 25px
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 10px
+
+        a
+            width: 100%
+            max-width: 350px
+
+        button
+            width: 100%
+            border: none
+            border-radius: 25px
+            padding: 10px
+            font-size: 16px
+            font-weight: 600
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 9px
+            cursor: pointer
+            transition: 0.3s
+
+        .github
+            background-color: #000
+            color: #fff
+
+            svg
+                width: 26px
+
+        .github:hover
+            background-color: #000000c2
+
+        .linkedin
+            background-color: #0077B5
+            color: #fff
+
+            svg
+                width: 26px
+
+        .linkedin:hover
+            background-color: #0076b5c7
+
+        .behance
+            background-color: #0F4CE7
+            color: #fff
+
+            svg
+                width: 26px
+
+        .behance:hover
+            background-color: #0f4ce7d0
+
+    .buttonSVG
+        bottom: 0
+        position: absolute
+        display: flex
+        justify-content: center
+        width: 100%
+
+        svg
+            width: 2.7rem
+            height: 2.7rem
+            margin: 16px
+            cursor: pointer
+
+.Section2
+    display: flex
+    padding: 60px 20px
+    justify-content: center
+    gap: 45px
+
+    .Itens
+        gap: 3px
+        display: flex
+        flex-direction: column
+
+.Section3
+    display: flex
+    padding: 50px 20px
+    align-items: center
+    flex-direction: column
+    gap: 20px
+
+    img
+        max-width: 400px
+        width: 100%
+
+    .Project
+        box-shadow: 2px 3px 11px 0px rgba(0,0,0,0.45)
+
+        .headerProject
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            gap: 5px
+            padding: 14px
+
+            a
+                display: flex
+                gap: 5px
+                align-items: center
+
+                svg
+                    width: 1.4rem
+                    height: 1.3rem
+
+        p
+            font-size: 17px
+
+        h3
+            font-size: 14px
+            text-decoration: underline
