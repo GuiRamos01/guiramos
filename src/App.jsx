@@ -57,6 +57,7 @@ const App = () => {
                     <p>+ Javascript</p>
                     <p>+ React JS</p>
                     <p>+ Vite</p>
+                    <p>API Experience</p>
                     <p>+ MongoDB</p>
                     <p>+ Wordpress</p>
                 </div>
