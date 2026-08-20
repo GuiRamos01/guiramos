@@ -12,22 +12,22 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    
+
     - name: Install Node.js
       uses: actions/setup-node@v4
       with:
         node-version: 20.x
-    
+
     - name: Install NPM packages
-      run: npm install
-    
+      run: npm ci
+
     - name: Build project
       run: npm run build
-    
+
     - name: Run tests
       run: npm run test
 
@@ -36,16 +36,16 @@ jobs:
       with:
         name: production-files
         path: ./build
-  
+
   deploy:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
-    
+
     permissions:
       contents: write
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
